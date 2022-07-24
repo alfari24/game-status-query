@@ -4,7 +4,7 @@
 >
 > This repository is a **Fork** of the [original repository](https://github.com/Ramzi-Sah/game-status-discordbot).  All thanks to the past contributors.
 >
-> Copyright © 2021 Ramzi-Sah, © 2021-present Clemie McCartney
+> Copyright © 2021 Ramzi-Sah, © 2022-present Clemie McCartney
 
 Since the original repository is not maintained anymore (cmiiw). I decided to maintain a fork of it with a Full documentations and fixes.
 
