@@ -2,15 +2,15 @@
   "name": "newstatusbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cls && node ./src/main.js"
+    "start": "cls && node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chartjs-node-canvas": "^3.1.0",
+    "chartjs-plugin-downsample": "^1.1.0",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "gamedig": "^2.0.27",

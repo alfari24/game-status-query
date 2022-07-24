@@ -343,11 +343,6 @@ CREATE TABLE IF NOT EXISTS `guilds` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5110 DEFAULT CHARSET=latin1;
 
--- Dumping data for table gamestatusbot.guilds: ~2,662 rows (approximately)
-DELETE FROM `guilds`;
-INSERT INTO `guilds` (`id`, `guild_id`, `instances`, `level`, `points`, `join_date`) VALUES
-	(151, '730060387679993916', '["BlRgH4YKcHQ7aqY"]', 5, 0, '2021-02-20 22:33:10');
-
 -- Dumping structure for table gamestatusbot.instances
 DROP TABLE IF EXISTS `instances`;
 CREATE TABLE IF NOT EXISTS `instances` (
@@ -378,10 +373,6 @@ CREATE TABLE IF NOT EXISTS `instances` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9898 DEFAULT CHARSET=latin1;
 
--- Dumping data for table gamestatusbot.instances: ~4,044 rows (approximately)
-DELETE FROM `instances`;
-INSERT INTO `instances` (`id`, `instance_id`, `error`, `started`, `name`, `channel`, `host`, `port`, `game`, `graph`, `hide_ip`, `hide_port`, `playerlist`, `full_playerlist`, `timezone`, `timeformat`, `minimal`, `logo`, `language`, `color`, `refresh_rate`, `custom_field`, `create_date`, `edit_date`) VALUES
-	(236, 'BlRgH4YKcHQ7aqY', -1, 1, 'GTA FiveM server', '781247669564604427', 'localhost', '30120', 'fivem', 1, 1, 0, 1, 0, 14, 1, 0, 'https://images-ext-1.discordapp.net/external/2TlQdN53PQqxVFVzI62TFQbzQ3OBC-Tm-VjtYMbJDyg/https/logodix.com/logo/1609859.jpg', 'EN', '#0059ff', 0, NULL, '2021-02-20 22:33:45', '2022-05-12 10:18:02');
 
 -- Dumping structure for table gamestatusbot.logs
 DROP TABLE IF EXISTS `logs`;
@@ -394,11 +385,6 @@ CREATE TABLE IF NOT EXISTS `logs` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=169 DEFAULT CHARSET=latin1;
 
--- Dumping data for table gamestatusbot.logs: ~0 rows (approximately)
-DELETE FROM `logs`;
-INSERT INTO `logs` (`id`, `type`, `log`, `user_id`, `date`) VALUES
-	(2, 'server points transfer', 'transfered 2 points to server 753946332766404689', '329777395307511818', '2021-05-23 20:06:19');
-
 -- Dumping structure for table gamestatusbot.users
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
@@ -409,11 +395,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`(18))
 ) ENGINE=InnoDB AUTO_INCREMENT=525 DEFAULT CHARSET=latin1;
-
--- Dumping data for table gamestatusbot.users: ~0 rows (approximately)
-DELETE FROM `users`;
-INSERT INTO `users` (`id`, `user_id`, `points`, `is_self_hosted`) VALUES
-	(221, '329777395307511818', 500, 0);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
