@@ -518,13 +518,13 @@ $guild_points = $reponse[0][1];
                             <div class="input-group">
                                 <input type="text" class="form-control bg-light border-0 small" placeholder="' . $STRINGS["instancelist_button_create_new"] . '" name="name" required="true">
                                 <div class="input-group-append">
-                                    <input type="hidden" name="serverid" value="'.$managedServer["id"].'">
+                                    <input type="hidden" name="serverid" value="' . $managedServer["id"] . '">
                                     <input type="submit" class="btn btn-primary" type="button" value="Go!"></input>
                                 </div>
                             </div>
                             <br>
                             <div class="alert alert-info" role="alert">
-                                '.$STRINGS["instancelist_noInstances"].'
+                                ' . $STRINGS["instancelist_noInstances"] . '
                                 </div>
                             </div>
                             
