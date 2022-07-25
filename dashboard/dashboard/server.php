@@ -507,8 +507,29 @@ $guild_points = $reponse[0][1];
                         <?php
                         if (empty($instances_id)) {
                             // if (true) {
-                            echo "<br><br>";
-                            echo $STRINGS["instancelist_noInstances"];
+                            echo '
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Registered Instances</h6>
+                                </div>
+                                <div class="card-body">
+                                
+                            <form class="ml-md-3 my-2 my-md-0 mw-100" action="../php/instance.php?create" method="post">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="' . $STRINGS["instancelist_button_create_new"] . '" name="name" required="true">
+                                <div class="input-group-append">
+                                    <input type="hidden" name="serverid" value="'.$managedServer["id"].'">
+                                    <input type="submit" class="btn btn-primary" type="button" value="Go!"></input>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="alert alert-info" role="alert">
+                                '.$STRINGS["instancelist_noInstances"].'
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </form>';
                         } else {
                         ?>
                             <div class="card shadow mb-4">
