@@ -255,8 +255,11 @@ $guild_points = $reponse[0][1];
                                         echo "disabled text-danger";
                                     };
                                     echo "\"href=\"../php/language.php?lang=" . $languageCode . "\"> ";
-                                    echo "<div class='icon-circle bg-primary'> <image style='width:50%;'' src='../assets/images/flags/" . $languageCode . ".png'></image></div>";
+                                    echo "<div class='icon-circle bg-primary'> <image style='width:100%;'' src='../assets/images/flags/" . $languageCode . ".png'></image></div>";
                                     echo "<div class='font-weight-bold'>   " . $language[0] . "</div>";
+                                    if (!$language[1]) {
+                                        echo "<div><div class='text-truncate'> (Not Translated)</div></div>";
+                                    };
                                     echo "</a>";
                                 };
                                 ?>
@@ -285,15 +288,6 @@ $guild_points = $reponse[0][1];
                                     <?php
                                     echo $user["points"];
                                     ?>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="<?php echo $supportDiscordServerLink ?>">
-                                    <i class="fab fa-discord fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    <?php echo $STRINGS["actionbar_user_Join_Support_Server"] ?>
-                                </a>
-                                <a class="dropdown-item" href="./payment/donate">
-                                    <i class="fas fa-heart fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Donate
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
