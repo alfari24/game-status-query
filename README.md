@@ -6,7 +6,7 @@
 >
 > Copyright © 2021 Ramzi-Sah, © 2022-present Clemie McCartney
 
-Since the original repository is not maintained anymore (cmiiw). I decided to maintain a fork of it with a Full documentations and fixes.
+Since the original repository is not maintained anymore (cmiiw), I decided to maintain a fork of it with a Full documentations and fixes.
 
 ## Overview
 
@@ -24,7 +24,7 @@ Add the `db.sql` inside *root* folder to your MySQL/MariaDB, then you can procee
 Don't forget to sync your mysql/mariadb details with the bot & frontend.
 
 - Bot = `bot/src/config.json`
-- Frontend `dashboard/php/db_config.php`
+- Frontend = `dashboard/php/db_config.php`
 
 > Note: You might need to rename the file from `db_config.example.php` to `db_config.php` in order to get the app working. and also `config.example.json` to `config.json` too!
 
