@@ -119,7 +119,7 @@ $guild_points = $reponse[0][1];
     <meta name="description" content="Game Query Server Dashboard">
     <meta name="author" content="clemiee">
 
-    <title>Game Query - Manage Instances</title>
+    <title>Game Query - Manage Guild</title>
 
     <!-- Custom fonts for this template-->
     <link href="../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

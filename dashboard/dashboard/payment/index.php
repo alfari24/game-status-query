@@ -52,7 +52,7 @@ if (!$user) {
 	<meta name="description" content="Game Query Server Dashboard">
 	<meta name="author" content="clemiee">
 
-	<title>Game Query - Dashboard</title>
+	<title>Game Query - Donate</title>
 
 	<!-- Custom fonts for this template-->
 	<link href="../../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
