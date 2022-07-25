@@ -6,7 +6,7 @@
 >
 > Copyright © 2021 Ramzi-Sah, © 2022-present Clemie McCartney
 
-Since the original repository is not maintained anymore (cmiiw), I decided to maintain a fork of it with a Full documentations and fixes.
+Since the original repository is not maintained anymore, I decided to maintain a fork of it with a Full documentations and fixes.
 
 ## Overview
 
@@ -30,14 +30,16 @@ Don't forget to sync your mysql/mariadb details with the bot & frontend.
 
 ## Discord Oauth2 & Bot Token
 
+### Oauth2
 We're using Discord Oauth2 for authenicating with our services. To create the application, Head over to https://discord.com/developers/applications and create a new app.
 
-Then, Go to your app, then Select Oauth2 tabs, select the general menu, then copy the Client ID and Client Secret. Paste it to `dashboard/php/config.php`
-
-> You might need to reset your Client Secret to generate a new Client Secret.
+Then, Go to your app, then Select Oauth2 tabs, select the general menu. You might need to reset your Client Secret to generate a new Client Secret. then copy the Client ID and Client Secret. Paste it to `dashboard/php/config.php`.
 
 > You might need to rename the file from `config.example.php` to `config.php` in order to get the app working.
 
+Don't forget to fill the redirect links to your own specifications. (e.g. `http://localhost/game-status-query/dashboard`)
+
+### Bot Token
 While you're at your discord app, Go to Bot tabs, and create a new bot.
 
 Reset your bot token to get the token, copy the token and paste it to `bot/src/config.json`.
@@ -54,6 +56,18 @@ When working on the bot, the `bot/src` directory is where you need to be. The bo
 
 Before you start the bot, you need to setup the dependencies, use [yarn](https://yarnpkg.com/) and run
 `yarn`. To start the bot, type `yarn start`.
+
+## Translating
+
+To start translating things, Please open a Issues first. We could discuss it first before you start working on it. 
+
+### Translating Frontend
+
+After your translate request is approved by us, All you need is to focus to `dashboard/assets/translations`. You might need to create a file & folder after your country codes.. (e.g. english is `EN`, then Bahasa Indonesia is `ID`).
+
+### Translating Bot
+
+After your translate request is approved by us, All you need is to focus to `bot/src/bot/translations`. You might need to create a file after your country codes.. (e.g. english is `EN.json`, then Bahasa Indonesia is `ID.json`).
 
 ## Docker
 
