@@ -454,7 +454,7 @@ class Instance {
 									
 									if (dataKeys[j] == "time") {
 										let date = new Date(player_data * 1000);
-										player_datas += ("0" + date.getHours()).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2) + ':' + ("0" + date.getSeconds()).substr(-2);
+										player_datas += ("0" + (date.getHours() - 8)).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2) + ':' + ("0" + date.getSeconds()).substr(-2);
 									} else {
 										// handle very long strings
 										player_data = (player_data.length > 18) ? player_data.substring(0, 18 - 3) + "..." : player_data;
