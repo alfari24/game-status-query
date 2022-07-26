@@ -11,9 +11,9 @@
 
 	"APIPort": 2727,
 
-	"statusUpdateTime": 10,
-	"statusQueryTime": 10,
-	"graphUpdateTime": 10,
+	"statusUpdateTime": 60,
+	"statusQueryTime": 60,
+	"graphUpdateTime": 60,
 
 	"graphsFolder": "/htdocs/web/StatusBot/graph",
 	"graphsLink": "http://localhost/web/StatusBot/graph",
