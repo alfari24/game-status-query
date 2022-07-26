@@ -32,7 +32,7 @@ class Bot {
             "ES" : JSON.parse(fs.readFileSync(__dirname + '/translations/ES.json', {encoding:'utf8', flag:'r'})),
             "FR" : JSON.parse(fs.readFileSync(__dirname + '/translations/FR.json', {encoding:'utf8', flag:'r'})),
             "IT" : JSON.parse(fs.readFileSync(__dirname + '/translations/IT.json', {encoding:'utf8', flag:'r'})),
-			"PL" : JSON.parse(fs.readFileSync(__dirname + '/translations/PL.json', {encoding:'utf8', flag:'r'})),
+	    "PL" : JSON.parse(fs.readFileSync(__dirname + '/translations/PL.json', {encoding:'utf8', flag:'r'})),
             "RU" : JSON.parse(fs.readFileSync(__dirname + '/translations/RU.json', {encoding:'utf8', flag:'r'})),
             "SW" : JSON.parse(fs.readFileSync(__dirname + '/translations/SW.json', {encoding:'utf8', flag:'r'}))
         };
